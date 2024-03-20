@@ -1,0 +1,37 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.moving-text span {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600; /* Orange color */
+  animation: increaseDecrease 5s infinite alternate; /* Adjust animation duration as needed */
+}
+
+.discussion-text span {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333; /* Dark color */
+  margin-top: 20px; /* Adjust distance between texts */
+}
+
+@keyframes increaseDecrease {
+  0% {
+    font-size: 24px;
+  }
+  100% {
+    font-size: 36px;
+  }
+}
